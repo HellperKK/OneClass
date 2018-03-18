@@ -42,16 +42,16 @@ class Game < Gosu::Window
   end
   def scene_intro_update
     if button_down?(Gosu::KbUp)
-      @elements[0][:y] -= 1
+      @elements[0][:y] -= 2
     end
     if button_down?(Gosu::KbDown)
-      @elements[0][:y] += 1
+      @elements[0][:y] += 2
     end
     if button_down?(Gosu::KbLeft)
-      @elements[0][:x] -= 1
+      @elements[0][:x] -= 2
     end
     if button_down?(Gosu::KbRight)
-      @elements[0][:x] += 1
+      @elements[0][:x] += 2
     end
   end
   def scene_intro_draw
